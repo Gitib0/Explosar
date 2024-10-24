@@ -1,0 +1,60 @@
+#laser {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background-color: #ff4d6d;
+  border-radius: 50%;
+  box-shadow: 0 0 20px 10px rgba(255, 77, 109, 0.7);
+  z-index: 0;
+}
+
+/*Some styles*/
+* {
+  margin: 0;
+  padding: 0;
+}
+#canvas {
+  display: block;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#controls {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#controls button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+img {
+    position: absolute;
+    z-index: 2;
+    min-width: 50px; /* Taille minimale en largeur */
+    min-height: 50px; /* Taille minimale en hauteur */
+  }
+
+#explosar{
+    transition: all 0.5s ease;
+}
